@@ -11,44 +11,31 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "SIA",
         "groups": [
           {
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Platform",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Documentation",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
+              "platform/login",
+              "platform/signup", 
+              "platform/user-management",
+              "platform/settings",
+              "platform/integrations",
+              "platform/code",
+              "platform/images",
+              "platform/settings",
+              "platform/navigation",
+              "platform/reusable-snippets",
+              "platform/test",
+              "platform/ticketing",
+              "platform/kb-access"
             ]
           }
         ]
@@ -60,16 +47,10 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://sia.scogo.ai"
     }
   },
   "footer": {
