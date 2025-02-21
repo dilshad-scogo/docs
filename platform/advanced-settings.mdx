@@ -1,0 +1,199 @@
+---
+title: 'Advanced Settings'
+description: 'Configure advanced features and integrations in SIA'
+icon: 'sliders'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/sia-logo-light.png"
+  alt="SIA Advanced Settings Overview"
+/>
+
+## Introduction
+
+SIA provides powerful customization options to enhance your customer service operations. From automated workflows to seamless CRM integrations, ticketing systems, and AI behavior controls, these advanced settings allow you to tailor SIA to your specific business needs.
+
+## Custom Workflows
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Workflow Configuration Interface" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="diagram-project" title="Understanding Workflows">
+    Workflow capabilities:
+    - Automated query routing
+    - Custom escalation rules
+    - Notification systems
+    - Response templates
+    
+    <Tip>
+      Start with basic workflows and gradually add complexity as you understand your needs better.
+    </Tip>
+  </Accordion>
+  
+  <Accordion icon="gear" title="Workflow Configuration">
+    Setup process:
+    1. Access Workflow Builder
+    2. Define trigger events:
+       - Query types
+       - User actions
+       - Time-based triggers
+    3. Set conditions and actions
+    4. Test and deploy
+
+    <CodeGroup>
+      <Code title="Workflow Example">
+        ```json
+        {
+          "trigger": "new_query",
+          "conditions": {
+            "category": "technical_support",
+            "priority": "high"
+          },
+          "actions": [
+            "assign_to_tech_team",
+            "send_notification"
+          ]
+        }
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+</AccordionGroup>
+
+## CRM Integrations
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="CRM Integration Dashboard" />
+</Frame>
+
+<CardGroup>
+  <Card title="Supported Platforms" icon="building">
+    Available integrations:
+    - Salesforce
+    - HubSpot
+    - Custom CRM via API
+    - Additional platforms
+  </Card>
+
+  <Card title="Data Sync Options" icon="arrows-rotate">
+    Synchronization features:
+    - Contact information
+    - Interaction history
+    - Custom fields
+    - Activity logging
+  </Card>
+</CardGroup>
+
+<AccordionGroup>
+  <Accordion icon="plug" title="Integration Setup">
+    Connection steps:
+    1. Select CRM platform
+    2. Provide API credentials
+    3. Configure data mapping
+    4. Set sync frequency
+    
+    <Warning>
+      Ensure your CRM API credentials have appropriate permissions before integration.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+## Ticket Management System
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Ticket Management Interface" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="ticket" title="Ticket Creation">
+    How tickets are generated:
+    - User queries
+    - AI-identified issues
+    - Manual creation
+    - Integration triggers
+
+    <Note>
+      Each ticket automatically receives a unique identifier for tracking purposes.
+    </Note>
+  </Accordion>
+
+  <Accordion icon="arrows-split-up-and-left" title="Ticket Workflow">
+    Management process:
+    1. Initial categorization
+    2. Priority assignment
+    3. Team routing
+    4. Status tracking
+    5. Resolution flow
+    
+    <CodeGroup>
+      <Code title="Ticket States">
+        ```plaintext
+        New → In Progress → Pending → Resolved → Closed
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+</AccordionGroup>
+
+## Automation & AI Configurations
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="AI Configuration Panel" />
+</Frame>
+
+<CardGroup>
+  <Card title="Task Automation" icon="robot">
+    Automate common tasks:
+    - Response generation
+    - Data collection
+    - Follow-up scheduling
+    - Report generation
+  </Card>
+
+  <Card title="AI Behavior Control" icon="sliders">
+    Adjustable parameters:
+    - Response tone
+    - Confidence threshold
+    - Learning rate
+    - Fallback actions
+  </Card>
+</CardGroup>
+
+<AccordionGroup>
+  <Accordion icon="wand-magic-sparkles" title="AI Configuration">
+    Customize AI behavior:
+    ```json
+    {
+      "response_settings": {
+        "tone": "professional",
+        "confidence_threshold": 0.85,
+        "max_tokens": 150,
+        "temperature": 0.7
+      }
+    }
+    ```
+    
+    <Tip>
+      Regular monitoring and adjustment of these settings helps optimize AI performance.
+    </Tip>
+  </Accordion>
+
+  <Accordion icon="chart-line" title="Performance Monitoring">
+    Track and optimize:
+    - Response accuracy
+    - Processing time
+    - User satisfaction
+    - Learning progress
+    
+    <Warning>
+      Major AI behavior changes should be tested in a staging environment first.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  For enterprise-specific configurations or custom integration needs, please contact our technical support team.
+</Note> 

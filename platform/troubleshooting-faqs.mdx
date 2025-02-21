@@ -1,0 +1,222 @@
+---
+title: 'Troubleshooting & FAQs'
+description: 'Solutions for common issues and frequently asked questions about SIA'
+icon: 'wrench'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/sia-logo-light.png"
+  alt="SIA Troubleshooting Guide"
+/>
+
+## Introduction
+
+This guide addresses common challenges users might encounter while using SIA and provides step-by-step solutions. Whether you're experiencing issues with query responses, document processing, or integrations, you'll find practical solutions and best practices here.
+
+## Common Issues & Solutions
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Troubleshooting Flow" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="circle-exclamation" title="SIA Not Responding to Queries">
+    Common causes and solutions:
+    1. Website Scraping Issues
+       - Verify website accessibility
+       - Check URL format
+       - Confirm content permissions
+    
+    2. Knowledge Base Problems
+       - Validate document uploads
+       - Check file formats
+       - Verify processing status
+    
+    3. Access Level Issues
+       - Review permission settings
+       - Confirm user roles
+       - Check integration status
+    
+    <Warning>
+      Always verify your knowledge base is properly configured before troubleshooting other issues.
+    </Warning>
+  </Accordion>
+  
+  <Accordion icon="file-circle-xmark" title="Document Processing Issues">
+    Troubleshooting steps:
+    1. Check file format compatibility
+    2. Verify file size limits
+    3. Monitor processing status
+    4. Review error messages
+    
+    <CodeGroup>
+      <Code title="Supported Formats">
+        ```plaintext
+        - PDF (text-based)
+        - DOC/DOCX
+        - TXT
+        - HTML
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+
+  <Accordion icon="plug-circle-xmark" title="CRM Integration Issues">
+    Integration troubleshooting:
+    1. Verify API credentials
+    2. Check connection logs
+    3. Confirm permissions
+    4. Test data flow
+    
+    <Note>
+      Keep your API keys and credentials up to date to prevent connection issues.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+## Debugging Steps
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Debugging Process" />
+</Frame>
+
+<CardGroup>
+  <Card title="Activity Logs" icon="list-check">
+    Log checking process:
+    - Access system logs
+    - Review error messages
+    - Check timestamp patterns
+    - Monitor response codes
+  </Card>
+
+  <Card title="Document Verification" icon="file-circle-check">
+    Verification steps:
+    - Processing status
+    - Index completion
+    - Content accessibility
+    - Integration status
+  </Card>
+</CardGroup>
+
+<AccordionGroup>
+  <Accordion icon="magnifying-glass" title="System Diagnostics">
+    Diagnostic steps:
+    ```json
+    {
+      "check_points": {
+        "connectivity": "API endpoints",
+        "authentication": "Token validity",
+        "permissions": "Access levels",
+        "processing": "Queue status"
+      }
+    }
+    ```
+    
+    <Tip>
+      Regular system diagnostics can help prevent common issues before they occur.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+## Frequently Asked Questions
+
+<AccordionGroup>
+  <Accordion icon="clock" title="Document Processing Time">
+    Q: How long does it take for uploaded documents to be processed?
+    
+    Processing times depend on:
+    - Document size
+    - File format
+    - System load
+    - Content complexity
+    
+    <Note>
+      Most documents are processed within minutes, but larger files may take longer.
+    </Note>
+  </Accordion>
+
+  <Accordion icon="database" title="Multiple Knowledge Bases">
+    Q: Can SIA handle multiple knowledge bases simultaneously?
+    
+    Yes, SIA supports:
+    - Multiple data sources
+    - Separate access levels
+    - Priority settings
+    - Cross-reference capability
+  </Accordion>
+
+  <Accordion icon="circle-question" title="No Answer Found">
+    Q: What happens if SIA cannot find an answer?
+    
+    Default behavior:
+    1. Acknowledge limitation
+    2. Suggest alternatives
+    3. Offer human escalation
+    4. Log the query
+  </Accordion>
+
+  <Accordion icon="chart-line" title="Improving Accuracy">
+    Q: How can I improve SIA's response accuracy?
+    
+    Optimization steps:
+    - Update knowledge base regularly
+    - Review common queries
+    - Adjust confidence thresholds
+    - Provide feedback on responses
+  </Accordion>
+</AccordionGroup>
+
+## Contacting Support
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Support Contact Options" />
+</Frame>
+
+<CardGroup>
+  <Card title="When to Contact Support" icon="headset">
+    Reach out when:
+    - Critical functionality issues
+    - Integration problems
+    - Security concerns
+    - Complex configurations
+  </Card>
+
+  <Card title="Support Channels" icon="messages">
+    Available channels:
+    - Dashboard ticket system
+    - Email support
+    - Emergency hotline
+    - Community forum
+  </Card>
+</CardGroup>
+
+<AccordionGroup>
+  <Accordion icon="ticket" title="Submitting Support Tickets">
+    Required information:
+    1. Issue description
+    2. Error messages
+    3. System logs
+    4. Steps to reproduce
+    
+    <Warning>
+      Include all relevant details to ensure faster resolution of your support ticket.
+    </Warning>
+  </Accordion>
+
+  <Accordion icon="clipboard-list" title="Issue Reporting Checklist">
+    Before contacting support:
+    - Try basic troubleshooting
+    - Check documentation
+    - Gather error logs
+    - Document recent changes
+    
+    <Tip>
+      Screenshots and error messages greatly help in diagnosing issues quickly.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  For urgent issues or system-wide problems, contact our emergency support line directly.
+</Note> 

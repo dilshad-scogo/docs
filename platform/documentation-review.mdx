@@ -1,0 +1,229 @@
+---
+title: 'Documentation Review & Finalizing'
+description: 'Best practices for reviewing and publishing documentation'
+icon: 'book-open-reader'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/sia-logo-light.png"
+  alt="Documentation Review Process"
+/>
+
+## Introduction
+
+A thorough review process ensures your documentation is accurate, clear, and valuable to users. This guide outlines the steps for reviewing, testing, and maintaining high-quality documentation using Mintlify.
+
+## Proofreading & Formatting
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Documentation Style Guide" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="spell-check" title="Content Review">
+    Review checklist:
+    - Spelling and grammar
+    - Technical accuracy
+    - Clarity and conciseness
+    - Consistent terminology
+    
+    <Tip>
+      Use tools like Grammarly or Hemingway Editor for initial proofreading.
+    </Tip>
+  </Accordion>
+  
+  <Accordion icon="paintbrush" title="Formatting Standards">
+    Style guidelines:
+    ```markdown
+    # Main Heading (H1)
+    ## Section Heading (H2)
+    ### Subsection (H3)
+    
+    - Bullet points
+    - For lists
+    
+    1. Numbered steps
+    2. For procedures
+    
+    `inline code`
+    ```
+    
+    <Warning>
+      Maintain consistent formatting across all documentation pages.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+## Testing Documentation in Mintlify
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Mintlify Preview Interface" />
+</Frame>
+
+<CardGroup>
+  <Card title="Preview Testing" icon="eye">
+    Check these elements:
+    - Page rendering
+    - Navigation flow
+    - Component display
+    - Mobile responsiveness
+  </Card>
+
+  <Card title="Link Validation" icon="link">
+    Verify all:
+    - Internal links
+    - External references
+    - API endpoints
+    - Code examples
+  </Card>
+</CardGroup>
+
+<AccordionGroup>
+  <Accordion icon="browser" title="UI Testing">
+    Test procedures:
+    1. Local preview
+    2. Navigation check
+    3. Component testing
+    4. Responsive design
+    
+    <CodeGroup>
+      <Code title="Preview Command">
+        ```bash
+        mintlify dev
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+</AccordionGroup>
+
+## Internal Review & Feedback
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Review Process Flow" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="users" title="Review Process">
+    Stakeholder review:
+    1. Technical review
+       - Developers
+       - Engineers
+       - Product team
+    2. Content review
+       - Technical writers
+       - Support team
+       - End users
+    
+    <Note>
+      Collect feedback systematically using a shared tracking system.
+    </Note>
+  </Accordion>
+
+  <Accordion icon="clipboard-check" title="Feedback Implementation">
+    Action items:
+    - Track suggestions
+    - Prioritize changes
+    - Update content
+    - Verify fixes
+    
+    <Tip>
+      Create a feedback matrix to track and prioritize improvements.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+## Publishing & Deployment
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Deployment Process" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="rocket" title="Deployment Steps">
+    Publication process:
+    ```json
+    {
+      "deployment_steps": {
+        "review": "Final content check",
+        "version": "Update version",
+        "commit": "Push to GitHub",
+        "deploy": "Trigger deployment"
+      }
+    }
+    ```
+    
+    <Warning>
+      Always test changes in a staging environment before deploying to production.
+    </Warning>
+  </Accordion>
+
+  <Accordion icon="code-commit" title="Version Control">
+    Git workflow:
+    1. Create feature branch
+    2. Make changes
+    3. Review and test
+    4. Merge to main
+    
+    <CodeGroup>
+      <Code title="Git Commands">
+        ```bash
+        git checkout -b docs/update
+        git add .
+        git commit -m "Update documentation"
+        git push origin docs/update
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+</AccordionGroup>
+
+## Maintaining & Updating Docs
+
+<CardGroup>
+  <Card title="Regular Maintenance" icon="arrows-rotate">
+    Maintenance tasks:
+    - Weekly content review
+    - Update outdated info
+    - Add new features
+    - Remove obsolete content
+  </Card>
+
+  <Card title="User Feedback" icon="comments">
+    Feedback channels:
+    - User surveys
+    - Support tickets
+    - Community forums
+    - Direct feedback
+  </Card>
+</CardGroup>
+
+<AccordionGroup>
+  <Accordion icon="list-check" title="Update Checklist">
+    Regular checks:
+    1. Content accuracy
+    2. Link validity
+    3. Image integrity
+    4. Code examples
+    
+    <Note>
+      Set up regular documentation review cycles with your team.
+    </Note>
+  </Accordion>
+
+  <Accordion icon="chart-line" title="Documentation Metrics">
+    Track metrics:
+    - Page views
+    - Search queries
+    - User feedback
+    - Support tickets
+    
+    <Tip>
+      Use analytics to identify areas needing improvement or expansion.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Remember that documentation is a living resource that requires regular updates and maintenance to remain valuable.
+</Note> 

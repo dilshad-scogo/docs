@@ -1,0 +1,177 @@
+---
+title: 'Customization & Personalization'
+description: 'Customize SIA to match your brand and enhance user experience'
+icon: 'palette'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/sia-logo-light.png"
+  alt="SIA Customization Overview"
+/>
+
+## Introduction
+
+SIA offers extensive customization options to ensure the AI assistant seamlessly integrates with your brand identity. From visual elements to interaction patterns, every aspect can be tailored to create a cohesive and professional user experience.
+
+## Widget Personalization
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Widget Customization Interface" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="palette" title="Visual Customization">
+    Customize appearance:
+    - Brand colors
+    - Logo placement
+    - Font styles
+    - Widget dimensions
+    
+    <CodeGroup>
+      <Code title="Style Configuration">
+        ```css
+        {
+          "widget_style": {
+            "primary_color": "#007AFF",
+            "font_family": "Inter, sans-serif",
+            "border_radius": "8px",
+            "width": "360px"
+          }
+        }
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+  
+  <Accordion icon="arrows-up-down-left-right" title="Position & Layout">
+    Placement options:
+    1. Select widget position:
+       - Bottom right
+       - Bottom left
+       - Custom position
+    2. Configure spacing
+    3. Set responsive behavior
+    
+    <Tip>
+      Consider mobile responsiveness when choosing widget placement and dimensions.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup>
+  <Card title="Branding Elements" icon="paint-brush">
+    Customizable components:
+    - Company logo
+    - Chat header
+    - Button styles
+    - Message bubbles
+  </Card>
+
+  <Card title="Responsive Design" icon="mobile-screen">
+    Adaptive features:
+    - Mobile optimization
+    - Tablet layout
+    - Desktop view
+    - Dynamic sizing
+  </Card>
+</CardGroup>
+
+## Embedding AI on Website
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Widget Embedding Guide" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="code" title="Installation Code">
+    Implementation steps:
+    ```html
+    <!-- SIA Widget Embed Code -->
+    <script>
+      window.SIAConfig = {
+        widgetId: 'YOUR_WIDGET_ID',
+        position: 'bottom-right',
+        theme: 'light'
+      };
+    </script>
+    <script src="https://widget.sia.ai/loader.js" async></script>
+    ```
+    
+    <Warning>
+      Place the script just before the closing body tag for optimal loading performance.
+    </Warning>
+  </Accordion>
+
+  <Accordion icon="rocket" title="Performance Optimization">
+    Best practices:
+    - Async loading
+    - Resource optimization
+    - Cache management
+    - Error handling
+    
+    <Note>
+      The widget is designed to load without blocking your website's main content.
+    </Note>
+  </Accordion>
+</AccordionGroup>
+
+## Configuring AI Responses
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="AI Response Configuration" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="message" title="Response Customization">
+    Tone and style settings:
+    ```json
+    {
+      "ai_personality": {
+        "tone": "professional",
+        "formality_level": "business",
+        "response_length": "concise",
+        "language_style": "technical"
+      }
+    }
+    ```
+    
+    <Tip>
+      Align AI personality settings with your brand voice guidelines.
+    </Tip>
+  </Accordion>
+
+  <Accordion icon="diagram-next" title="Interaction Flow">
+    Configure conversation patterns:
+    1. Initial greeting
+    2. Response structure
+    3. Follow-up questions
+    4. Escalation triggers
+    
+    <Warning>
+      Test AI response patterns thoroughly before deploying changes to production.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup>
+  <Card title="Learning Patterns" icon="brain">
+    Adaptive behaviors:
+    - User interaction analysis
+    - Response optimization
+    - Pattern recognition
+    - Continuous improvement
+  </Card>
+
+  <Card title="Escalation Rules" icon="arrow-up-right">
+    Workflow triggers:
+    - Complex queries
+    - Sentiment detection
+    - Priority routing
+    - Human handoff
+  </Card>
+</CardGroup>
+
+<Note>
+  Need help with advanced customization? Our technical team can assist with complex implementations and custom requirements.
+</Note> 

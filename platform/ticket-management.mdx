@@ -1,0 +1,185 @@
+---
+title: 'Ticket Creation & Management'
+description: 'Learn how to manage customer support tickets with SIA'
+icon: 'ticket'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/sia-logo-light.png"
+  alt="SIA Ticket Management Overview"
+/>
+
+## Introduction
+
+SIA's integrated ticketing system provides a robust solution for managing customer queries that require human intervention. When AI responses don't fully address a customer's needs, the system automatically creates and routes tickets to ensure proper follow-up and resolution.
+
+## Understanding Ticket Workflow
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Ticket Workflow Diagram" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="ticket" title="Automatic Ticket Generation">
+    Triggers for ticket creation:
+    - AI confidence below threshold
+    - Customer escalation request
+    - Complex query detection
+    - Specific keywords or topics
+    
+    <Note>
+      Each ticket receives a unique identifier and timestamp for tracking purposes.
+    </Note>
+  </Accordion>
+  
+  <Accordion icon="diagram-project" title="Ticket Creation Process">
+    Step-by-step workflow:
+    1. Trigger identification
+    2. Information gathering:
+       - Customer details
+       - Chat history
+       - Query context
+    3. Priority assignment
+    4. Team routing
+    
+    <CodeGroup>
+      <Code title="Ticket Structure">
+        ```json
+        {
+          "ticket_id": "TKT-2024-001",
+          "priority": "high",
+          "status": "new",
+          "source": "chat_widget",
+          "customer_info": {
+            "name": "Customer Name",
+            "email": "customer@email.com"
+          }
+        }
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+</AccordionGroup>
+
+## Viewing & Managing Tickets
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Ticket Management Dashboard" />
+</Frame>
+
+<CardGroup>
+  <Card title="Dashboard Access" icon="gauge">
+    Key features:
+    - Ticket overview
+    - Status tracking
+    - Priority management
+    - Team assignments
+  </Card>
+
+  <Card title="Agent Actions" icon="user-gear">
+    Available operations:
+    - View ticket details
+    - Update status
+    - Add comments
+    - Reassign tickets
+  </Card>
+</CardGroup>
+
+<AccordionGroup>
+  <Accordion icon="list-check" title="Ticket Management">
+    Administrative functions:
+    1. Access ticket dashboard
+    2. Filter and sort tickets
+    3. Bulk actions available:
+       - Mass assignment
+       - Status updates
+       - Priority changes
+    
+    <Tip>
+      Use filters and tags to efficiently organize and prioritize tickets.
+    </Tip>
+  </Accordion>
+
+  <Accordion icon="clock-rotate-left" title="Ticket Lifecycle">
+    Status progression:
+    ```plaintext
+    New → Assigned → In Progress → Pending → Resolved → Closed
+    ```
+    
+    <Warning>
+      Maintain clear documentation for status changes to ensure proper tracking.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+## CRM Integration for Tickets
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="CRM Integration Setup" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="plug" title="Integration Setup">
+    Connection process:
+    1. Navigate to Integrations
+    2. Select CRM platform:
+       - HubSpot
+       - Zendesk
+       - Salesforce
+    3. Provide API credentials
+    4. Configure field mapping
+    
+    <CodeGroup>
+      <Code title="Integration Config">
+        ```json
+        {
+          "crm_platform": "hubspot",
+          "sync_settings": {
+            "direction": "bidirectional",
+            "interval": "real-time",
+            "field_mapping": {
+              "ticket_id": "case_number",
+              "status": "ticket_status"
+            }
+          }
+        }
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+
+  <Accordion icon="arrows-rotate" title="Synchronization">
+    Automated sync features:
+    - Real-time updates
+    - Field mapping
+    - Status synchronization
+    - Attachment handling
+    
+    <Warning>
+      Test synchronization in a staging environment before enabling in production.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+<CardGroup>
+  <Card title="Data Flow" icon="database">
+    Synchronized information:
+    - Customer details
+    - Ticket status
+    - Communication history
+    - Resolution notes
+  </Card>
+
+  <Card title="Best Practices" icon="star">
+    Optimization tips:
+    - Regular sync verification
+    - Field mapping review
+    - Error monitoring
+    - Backup procedures
+  </Card>
+</CardGroup>
+
+<Note>
+  For custom CRM integrations or specific requirements, contact our integration support team.
+</Note> 

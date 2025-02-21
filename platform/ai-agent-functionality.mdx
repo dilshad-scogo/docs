@@ -1,0 +1,171 @@
+---
+title: 'AI Agent Functionality'
+description: 'Understanding how SIA AI agents process and respond to queries'
+icon: 'robot'
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/sia-logo-light.png"
+  alt="SIA AI Agent Overview"
+/>
+
+## Introduction
+
+SIA's AI agents are designed to provide intelligent responses by leveraging your website content, knowledge base, and FAQ documentation. This guide explains how our AI processes information and interacts with users through various channels.
+
+## Handling Queries
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Query Processing Flow" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="brain" title="Query Processing">
+    How SIA processes user queries:
+    1. Receives user input
+    2. Searches through available knowledge sources:
+       - Scraped website content
+       - Uploaded documentation
+       - FAQ database
+    3. Generates contextual responses
+    
+    <Tip>
+      The more comprehensive your knowledge base, the more accurate the responses will be.
+    </Tip>
+  </Accordion>
+  
+  <Accordion icon="circle-exclamation" title="Fallback Responses">
+    When information isn't found:
+    1. Agent acknowledges knowledge gap
+    2. Provides alternative suggestions
+    3. Offers to:
+       - Connect with human support
+       - Submit query for future training
+       - Rephrase the question
+
+    <Warning>
+      Configure fallback responses in your agent settings to ensure appropriate handling of unknown queries.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+## Website Scraping
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Website Scraping Process" />
+</Frame>
+
+<CardGroup>
+  <Card title="Information Extraction" icon="spider-web">
+    Scraping process:
+    - URL submission
+    - Content analysis
+    - Data extraction
+    - Knowledge base integration
+  </Card>
+
+  <Card title="Limitations & Best Practices" icon="circle-info">
+    Important considerations:
+    - Regular content updates
+    - Structured data preferred
+    - Public page access required
+    - Dynamic content handling
+  </Card>
+</CardGroup>
+
+## FAQ Handling
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="FAQ Management Interface" />
+</Frame>
+
+<AccordionGroup>
+  <Accordion icon="file-upload" title="FAQ Document Upload">
+    Upload your FAQ documents:
+    1. Navigate to FAQ section
+    2. Select document format:
+       - PDF
+       - DOC
+       - Structured text
+    3. Review processed content
+    
+    <CodeGroup>
+      <Code title="Supported Formats">
+        ```plaintext
+        - PDF Documents
+        - Microsoft Word (.doc, .docx)
+        - Plain Text (.txt)
+        - Structured Markdown (.md)
+        ```
+      </Code>
+    </CodeGroup>
+  </Accordion>
+
+  <Accordion icon="chart-line" title="Response Enhancement">
+    How FAQs improve responses:
+    - Provides verified answers
+    - Enhances accuracy
+    - Reduces response time
+    - Maintains consistency
+
+    <Tip>
+      Regularly update your FAQ database to keep responses current and accurate.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+## AI Chat Widget & Web Call
+
+<Frame>
+  <img src="/images/sia-logo-light.png" alt="Chat Widget Interface" />
+</Frame>
+
+<CardGroup>
+  <Card title="Chat Widget Implementation" icon="message-bot">
+    Widget features:
+    - Customizable appearance
+    - Real-time responses
+    - Multi-language support
+    - Mobile responsiveness
+  </Card>
+
+  <Card title="Web Call Integration" icon="phone-volume">
+    Call functionality:
+    - Voice interaction
+    - Real-time processing
+    - Seamless handoff
+    - Call recording options
+  </Card>
+</CardGroup>
+
+<AccordionGroup>
+  <Accordion icon="code" title="Widget Installation">
+    Add the chat widget to your website:
+    ```html
+    <!-- SIA Chat Widget -->
+    <div id="sia-chat-widget"></div>
+    <script src="[Your-Widget-URL]"></script>
+    ```
+    
+    <Note>
+      Customize the widget's appearance through your agent settings dashboard.
+    </Note>
+  </Accordion>
+
+  <Accordion icon="gear" title="Configuration Options">
+    Available settings:
+    - Widget position
+    - Color scheme
+    - Initial message
+    - Response behavior
+    
+    <Warning>
+      Test the widget in a development environment before deploying to production.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  For detailed technical specifications or custom implementations, contact our developer support team.
+</Note> 

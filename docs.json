@@ -17,13 +17,21 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart"
+              "getting-started"
             ]
           },
           {
             "group": "Platform",
             "pages": [
-
+              "platform/platform-walkthrough",
+              "platform/ai-agent-functionality",
+              "platform/advanced-settings",
+              "platform/customization-personalization",
+              "platform/ticket-management",
+              "platform/analytics-reporting",
+              "platform/troubleshooting-faqs",
+              "platform/security-privacy",
+              "platform/documentation-review",
               "platform/test"
             ]
           }
@@ -50,3 +58,4 @@
     }
   }
 }
+
