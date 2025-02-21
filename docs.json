@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5171FF",
+    "light": "#5171FF",
+    "dark": "#5171FF"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -23,19 +23,8 @@
           {
             "group": "Platform",
             "pages": [
-              "platform/login",
-              "platform/signup", 
-              "platform/user-management",
-              "platform/settings",
-              "platform/integrations",
-              "platform/code",
-              "platform/images",
-              "platform/settings",
-              "platform/navigation",
-              "platform/reusable-snippets",
-              "platform/test",
-              "platform/ticketing",
-              "platform/kb-access"
+
+              "platform/test"
             ]
           }
         ]
@@ -43,8 +32,8 @@
     ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/scogo-logo(1).webp", 
+    "dark": "/logo/scogo-logo(1).webp"
   },
   "navbar": {
     "primary": {
