@@ -4,11 +4,6 @@ description: 'Learn how to use key features of the SIA platform'
 icon: 'compass'
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/sia-logo-light.png"
-  alt="SIA Platform Overview"
-/>
 
 ## Introduction
 
@@ -17,34 +12,36 @@ Welcome to the SIA Platform Walkthrough! This guide covers the essential feature
 ## Agents
 
 <Frame>
-  <img src="/images/sia-logo-light.png" alt="Agent Creation Interface" />
+  <img src="/images/platform/agents.png" alt="Agent Creation Interface" />
 </Frame>
 
 <AccordionGroup>
   <Accordion icon="robot" title="Creating an Agent">
     Follow these steps to create your AI agent:
     1. Navigate to the Agents section
-    2. Click "Create New Agent"
+    2. Click "Create Agent"
     3. Configure your agent settings:
-       - Name and description
-       - Response behavior
-       - Access permissions
+       - Domain
+       - Description
+       - Logo URL
+    4. Click on Create Button and you AI will be ready to support your customer. 
+    
     
     <Frame>
-      <img src="/images/sia-logo-light.png" alt="Agent Configuration Screen" />
+      <img src="/images/platform/agent-created.png" alt="Agent Screen" />
     </Frame>
+
   </Accordion>
   
   <Accordion icon="pen-to-square" title="Editing an Agent">
+  <Frame>
+    <img src="/images/platform/edit-agent.png" alt ="Edit Agent" />
+  </Frame>
     To modify existing agents:
-    1. Select the agent from your dashboard
-    2. Click "Edit" or the settings icon
-    3. Update the desired settings
-    4. Save your changes
-
-    <Tip>
-      Regular updates to your agent's settings can help optimize its performance and accuracy.
-    </Tip>
+    1. Click "Edit" or the settings icon
+    2. Update the desired settings
+    3. Save your changes
+ 
   </Accordion>
 
   <Accordion icon="code" title="Website Integration">
@@ -69,72 +66,51 @@ Welcome to the SIA Platform Walkthrough! This guide covers the essential feature
 ## Knowledge Hub
 
 <Frame>
-  <img src="/images/sia-logo-light.png" alt="Knowledge Hub Dashboard" />
+  <img src="/images/platform/kb.png" alt="Knowledge Hub Dashboard" />
 </Frame>
-
-<CardGroup>
-  <Card title="Document Upload" icon="file-arrow-up">
-    Upload process:
-    - Click "Upload Documents"
-    - Select PDF or DOC files
-    - Wait for processing completion
-    - Verify successful upload
-  </Card>
-
-  <Card title="Access Levels" icon="lock">
-    Available access levels:
-    - Team Member: Limited to specific team members
-    - Entire Organization: Available to all org members
-    - Public: Accessible to everyone
-  </Card>
-
-  <Card title="Knowledge Base Integration" icon="link">
-    Connect to agents:
-    - Select target agent
-    - Choose knowledge base
-    - Set access permissions
-    - Confirm integration
-  </Card>
-</CardGroup>
-
-## Platform Features & Settings
-
-<Frame>
-  <img src="/images/sia-logo-light.png" alt="Platform Settings" />
-</Frame>
-
+A folder in Knowledge Hub will be ctreated against your AI Agent which you created.
+All the knowledge provided in this folder will be mapped with that AI Agent after providing the access. 
 <AccordionGroup>
-  <Accordion icon="palette" title="Theme Customization">
-    Personalize your experience:
-    - Access settings menu
-    - Find "Appearance" section
-    - Choose Light or Dark mode
-    - Apply changes
-    
-    <Warning>
-      Theme changes will apply immediately across all your active sessions.
-    </Warning>
+  <Accordion title="Document Upload" icon="file-arrow-up">
+    <Frame>
+    <img src ="/images/platform/kb-folder.png" alt="Knowledge Base Folder" />
+    </Frame>
+    Upload process:
+    - Navigate to Knowledge Hub
+    - Select the desired folder. 
+      
+    - Click on File Upload and Select the file.
+    <Frame>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <img src="/images/platform/file-upload.png" alt="Upload File" height="200" width="200" style={{ marginRight: '80px' }} />
+        <img src="/images/platform/select-file.png" alt="Upload File" height="180" width="180" />
+      </div>
+    </Frame>
+    - File will be uploaded and will be visible on the knowledge hub.
+    <img src="/images/platform/file-uploaded.png" alt="File Uploaded" height="300" width="700" />
+
   </Accordion>
 
-  <Accordion icon="message-dots" title="Feedback & Support">
-    Get help when needed:
-    - Use the Help Center
-    - Submit feedback forms
-    - Contact support team
-    - Track support tickets
+  <Accordion title="Access Levels" icon="lock">
+  Here you can manage the access level of the document.
+  <img src="/images/platform/access-level.png" alt="Access Level" height="180" width="180"/>
+  
+    Available access levels:
+    - Just Me: Accessible for indiviual 
+    - Team Members : Limited to specific team.
+    - Entire Organization: Available to all org members
+    - Extended Access: Accessible via Ask AI Agent and AI Call. 
   </Accordion>
 
-  <Accordion icon="arrow-right-from-bracket" title="Account Security">
-    Secure logout process:
-    1. Click your profile icon
-    2. Select "Logout"
-    3. Confirm action
-    
-    <Tip>
-      Always ensure you've saved any changes before logging out.
-    </Tip>
+  <Accordion title="Knowledge Base Integration" icon="link">
+    Connect to agents:
+    - Navigate to target file in knowledge hub.
+    - Set access permissions to Extended Access.
+
+    AI Agent will answer from the the provided document.
   </Accordion>
 </AccordionGroup>
+
 
 <Note>
   For additional assistance or feature requests, our support team is available 24/7 through the Help Center.
